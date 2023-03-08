@@ -30,21 +30,19 @@ const submitScore = async (e) => {
   const username = usernameInput.value.trim();
   const score = Number(scoreInput.value.trim());
   if (username && score) {
-    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores', {
       method: 'POST',
       body: JSON.stringify({
         user: username,
-        score: score,
+        score,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    const data = await response.json();
-    console.log(data);
     await renderScores();
   } else {
-    alert('Null values not accepted');
+    renderScores();
   }
   usernameInput.value = '';
   scoreInput.value = '';
