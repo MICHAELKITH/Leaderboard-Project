@@ -18,7 +18,7 @@
     "url": "https://github.com/MICHAELKITH/Leaderboard-Project/issues"
   },
   "homepage": "https://github.com/MICHAELKITH/Leaderboard-Project#readme",
-    "devDependencies": {
+  "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
