@@ -7,7 +7,7 @@ const scoreInput = document.querySelector('#score');
 const scoresList = document.querySelector('.scores');
 
 const fetchScores = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores/');
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F85/scores/');
   const data = await response.json();
   return data.result;
 };
@@ -30,7 +30,7 @@ const submitScore = async (e) => {
   const username = usernameInput.value.trim();
   const score = Number(scoreInput.value.trim());
   if (username && score) {
-    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F8E/scores', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/iTrISlBXlaWu8ZH27F85/scores', {
       method: 'POST',
       body: JSON.stringify({
         user: username,
