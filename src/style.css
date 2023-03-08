@@ -1,0 +1,66 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 10% 0 0 18%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.left {
+  min-width: 350px;
+}
+
+.left > h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scores {
+  list-style: none;
+  padding: 2% 0;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+  padding-inline-start: 0;
+}
+
+.list-item {
+  padding-left: 5%;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.list-item:nth-child(even) {
+  background-color: lightgray;
+}
+
+input[type=text] {
+  display: block;
+  line-height: 25px;
+  padding: 2%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+
+input[type=number] {
+  display: block;
+  line-height: 25px;
+  padding: 2%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+
+button[type=submit] {
+  float: right;
+}
