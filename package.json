@@ -1,22 +1,23 @@
 {
-  "name": "leader-board",
+  "name": "leaderboard-project",
   "version": "1.0.0",
-  "description": "<a name=\"readme-top\"></a>",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MICHAELKITH/Leader-board.git"
+    "url": "git+https://github.com/MICHAELKITH/Leaderboard-Project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MICHAELKITH/Leader-board/issues"
+    "url": "https://github.com/MICHAELKITH/Leaderboard-Project/issues"
   },
-  "homepage": "https://github.com/MICHAELKITH/Leader-board#readme",
+  "homepage": "https://github.com/MICHAELKITH/Leaderboard-Project#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
