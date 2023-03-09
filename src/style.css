@@ -85,10 +85,20 @@ button[type=submit] {
   border-radius: 10px;
 }
 
+button[type=submit]:hover {
+  color: rgb(253, 251, 251);
+  background-color: rgb(43, 16, 16);
+}
+
 .ref {
   color: black;
   background-color: rgb(253, 251, 251);
   border-radius: 10px;
+}
+
+.ref:hover {
+  color: rgb(253, 251, 251);
+  background-color: rgb(43, 16, 16);
 }
 
 .right > h2 {
