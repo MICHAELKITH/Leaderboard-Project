@@ -15,10 +15,10 @@
     transform: translateX(5%);
   }
 }
+
 h1 {
   margin: 10% 0 0 18%;
   color: white;
-  
 }
 
 .wrapper {
@@ -80,16 +80,17 @@ input[type=number] {
 
 button[type=submit] {
   float: right;
-  color:black;
+  color: black;
   background-color: rgb(253, 251, 251);
   border-radius: 10px;
+}
 
-}
-.ref{
-  color:black;
+.ref {
+  color: black;
   background-color: rgb(253, 251, 251);
   border-radius: 10px;
 }
-.right>h2{
+
+.right > h2 {
   color: white;
 }
