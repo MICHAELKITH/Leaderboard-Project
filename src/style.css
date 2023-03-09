@@ -3,10 +3,12 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  background-color: black;
 }
 
 h1 {
   margin: 10% 0 0 18%;
+  color: white;
 }
 
 .wrapper {
@@ -24,6 +26,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .scores {
@@ -33,12 +36,14 @@ h1 {
   border-radius: 5px;
   box-shadow: 5px 5px 5px gray;
   padding-inline-start: 0;
+  background-color: azure;
 }
 
 .list-item {
   padding-left: 5%;
   letter-spacing: 2px;
   font-weight: bold;
+  background-color: azure;
 }
 
 .list-item:nth-child(even) {
@@ -59,8 +64,21 @@ input[type=number] {
   padding: 2%;
   margin-bottom: 5%;
   border-radius: 5px;
+  color: aquamarine;
 }
 
 button[type=submit] {
   float: right;
+  color:black;
+  background-color: rgb(253, 251, 251);
+  border-radius: 10px;
+
+}
+.ref{
+  color:black;
+  background-color: rgb(253, 251, 251);
+  border-radius: 10px;
+}
+.right>h2{
+  color: white;
 }
