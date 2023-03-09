@@ -6,9 +6,19 @@
   background-color: black;
 }
 
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(5%);
+  }
+}
 h1 {
   margin: 10% 0 0 18%;
   color: white;
+  
 }
 
 .wrapper {
@@ -27,6 +37,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   color: white;
+  animation: slidein 5s infinite;
 }
 
 .scores {
