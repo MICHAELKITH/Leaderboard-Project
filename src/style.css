@@ -1,0 +1,106 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(5%);
+  }
+}
+
+h1 {
+  margin: 10% 0 0 18%;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.left {
+  min-width: 350px;
+}
+
+.left > h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  animation: slidein 5s infinite;
+}
+
+.scores {
+  list-style: none;
+  padding: 2% 0;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+  padding-inline-start: 0;
+  background-color: azure;
+}
+
+.list-item {
+  padding-left: 5%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: azure;
+}
+
+.list-item:nth-child(even) {
+  background-color: lightgray;
+}
+
+input[type=text] {
+  display: block;
+  line-height: 25px;
+  padding: 2%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+}
+
+input[type=number] {
+  display: block;
+  line-height: 25px;
+  padding: 2%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  color: aquamarine;
+}
+
+button[type=submit] {
+  float: right;
+  color: black;
+  background-color: rgb(253, 251, 251);
+  border-radius: 10px;
+}
+
+button[type=submit]:hover {
+  color: rgb(253, 251, 251);
+  background-color: rgb(43, 16, 16);
+}
+
+.ref {
+  color: black;
+  background-color: rgb(253, 251, 251);
+  border-radius: 10px;
+}
+
+.ref:hover {
+  color: rgb(253, 251, 251);
+  background-color: rgb(43, 16, 16);
+}
+
+.right > h2 {
+  color: white;
+}
